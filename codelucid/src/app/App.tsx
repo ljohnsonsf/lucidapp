@@ -76,8 +76,9 @@ export default function App() {
   const gradientColors = getGradientColors(bedtimeHour24);
 
   return (
-    <div 
-      className="min-h-screen flex flex-col max-w-md mx-auto relative overflow-hidden animate-gradient"
+  <div className="min-h-screen w-full flex items-center justify-center p-4">
+    <div
+      className="h-[92vh] max-h-[780px] w-full max-w-md rounded-3xl overflow-hidden shadow-2xl flex flex-col relative animate-gradient"
       style={{
         background: `linear-gradient(to bottom, ${gradientColors.top}, ${gradientColors.mid}, ${gradientColors.bottom})`,
         transition: 'background 4s ease-in-out'
@@ -93,7 +94,7 @@ export default function App() {
       />
       
       {/* Content wrapper */}
-      <div className="relative z-10 flex flex-col min-h-screen">
+      <div className="relative z-10 flex flex-col h-full">
         {/* Header */}
         <div className="text-center pt-6 pb-4">
           <h1 className="text-white text-xl font-normal tracking-wide text-etched">lucid</h1>
@@ -165,5 +166,6 @@ export default function App() {
         </div>
       </div>
     </div>
+  </div>
   );
 }
