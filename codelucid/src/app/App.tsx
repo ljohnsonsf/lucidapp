@@ -78,7 +78,7 @@ export default function App() {
   return (
   <div className="min-h-screen w-full flex items-center justify-center p-4">
     <div
-      className="h-[98vh] max-h-[780px] w-full max-w-md rounded-3xl overflow-hidden shadow-2xl flex flex-col relative animate-gradient"
+      className="h-[100vh] max-h-[840px] w-full max-w-md rounded-3xl overflow-hidden shadow-2xl flex flex-col relative animate-gradient"
       style={{
         background: `linear-gradient(to bottom, ${gradientColors.top}, ${gradientColors.mid}, ${gradientColors.bottom})`,
         transition: 'background 4s ease-in-out'
